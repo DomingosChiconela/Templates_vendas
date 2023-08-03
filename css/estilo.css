@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    background:white;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100px;
+    
+
+}
+
+
+.logo{
+    flex: 20%;
+   
+}
+.logo h1 {
+    text-align: center ;
+    font-size: 34px;
+    font-family: 'Lobster', cursive;
+    color: #201F1F;
+    
+
+}
+.menu{
+    flex:80%;
+
+    
+    text-align: right;
+}
+
+.peque{
+    display: none;
+}
+
+.menu a{
+padding: 20px;
+text-decoration: none ;
+font-size: 20px;
+color: black;
+}
+.menu #final{
+    padding: 20px;
+    margin-right: 40px;
+    background: black;
+    border-radius: 6px ;
+    font-weight: bold;
+    color: white;
+    
+}
+
+#final:hover{
+  
+    font-size: 24px;
+
+}
+.menu a:hover{
+    color:white;
+    font-weight: bold;
+background: #7a7878;
+border-radius: 5px;
+
+
+}
+
+
+
+
+
+.siderbar{
+    position: fixed;
+    background: black;
+    height: 100%;
+    width: 6%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.siderbar ul{
+    display: block;
+    list-style: none;
+padding: 0;
+text-align: center;
+}
+
+.siderbar ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:block;
+
+    padding-left: 5%;
+    
+    text-align: center;
+   
+}
+.siderbar ul li a{
+    text-decoration: none;
+    color: white;
+   
+
+}
+.siderbar ul li a .icon{
+   display: inline-block;
+   padding: 10px;
+
+
+  text-align: left;
+
+
+    
+}
+.siderbar  ul li a .icon img{
+    width: 30px;
+}
+
+.siderbar ul li a .titulo{
+
+    display: none ;
+    
+    
+}
+.siderbar:hover {
+
+    width: 20%;
+
+}
+
+.siderbar:hover ul li a .icon{
+    display:inline-block;
+
+ 
+   
+
+}
+
+.siderbar:hover ul li a .icon img{
+    width: 30px;
+}
+
+
+.siderbar:hover ul li a .titulo{
+    display:inline-block;
+    padding: 10px;
+   
+    width: 75%;
+  
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+
+
+
+.siderbar:hover  ul li{
+    text-align: left;
+    
+
+}
+
+
+
+
+ .siderbar ul li:hover{
+    border-left:5px solid #7a7878;
+    background: #201F1F;
+}
+
+
+
+
+
+
+
+
+
+
+.conteudo{
+    display: flex;
+   position: relative;
+   
+    
+    background: white;
+margin-left: 20%;
+
+height:auto;
+    flex-flow: row wrap;
+    
+
+    
+
+}
+.conteudo .card{
+
+    background:white;
+   
+    margin: 20px;
+    
+    width: 20%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0, 0, 0.19);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+
+    
+}
+.conteudo .card .card-text p{
+    text-align: center;
+}
+   
+
+.conteudo .card .descricao{
+    display: none;
+}
+#card1:hover  img{
+    display:none;
+
+}
+#card1:hover  .card-text{
+    display:none;
+
+}
+ #card1:hover .descricao{
+    display:inline-block;
+    color: white;
+    
+
+}
+ #card1:hover  {
+    background: #7a7878;
+}
+
+
+
+
+
+
+
+
+#card2:hover  img{
+    display:none;
+
+}
+#card2:hover  .card-text{
+    display:none;
+
+}
+ #card2:hover .descricao{
+    display:inline-block;
+    color: white;
+    
+
+}
+ #card2:hover  {
+    background: #7a7878;
+}
+
+
+
+
+
+#card3:hover  img{
+    display:none;
+
+}
+#card3:hover  .card-text{
+    display:none;
+
+}
+ #card3:hover .descricao{
+    display:inline-block;
+    color: white;
+    
+
+}
+ #card3:hover  {
+    background: #7a7878;
+    transform: matrix(0,1,1,1,0,0,0);
+}
+
+
+
+.conteudo:hover #card3{
+transform: matrix(0,1,1,1,0,0,0);
+
+}
+
+
+
+
+
+@media screen and (max-width:716px) {
+.menu {
+    display: none;
+}
+
+.logo{
+
+    text-align: center;
+}
+
+.navbar .peque {
+    flex: 2%;
+    display: inline-block;
+    text-align: center;
+}
+.navbar .peque ul{
+    list-style-type: none;
+    display: none ;
+   
+}
+
+
+
+
+
+
+.peque:hover img{
+    display: none;
+}
+
+.peque:hover  ul{
+    display:block ;
+   
+   
+}
+
+
+.navbar .peque ul li {
+
+   padding-top: 5px;
+   text-align: left;
+   margin-left: 40px;
+ 
+}
+
+.navbar .peque ul li a{
+text-decoration: none;
+font-weight: bolder;
+color: black;
+
+
+}
+
+.peque ul li a:hover{
+border-left: 5px solid #7a7878;
+background: #201F1F ;
+color: white;
+font-size: 18px;
+}
+.siderbar{
+    width: 10%;
+}
+.siderbar img{
+    width: 30px;
+}
+
+.siderbar:hover {
+
+    width: 37%;
+
+}
+
+
+.conteudo{
+    margin-left: 37%;
+}
+    
+}
+/*.container{
+
+    display: inline-block;
+    background: #4360b5;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+
+}
+.siderbar{
+    flex: 10%;
+
+    border: 1px solid red;
+    
+}
+
+.siderbar ul{
+    display: inline-block;
+    list-style-type: none;
+padding: 0;
+ 
+}
+.siderbar ul li a{
+    
+    text-decoration: none;
+
+}
+.siderbar ul  li a  .icon {
+    margin-top: 5px;
+   padding: 20px;
+    color: yellow;
+    width: 40%;
+border: 1px solid blue;
+
+}
+
+.siderbar ul  li a  .titulo{
+ 
+    color: yellow;
+    width: 60%;
+
+
+}
+
+
+
+
+
+.conteudo{
+    flex: 90%;
+    border: 1px solid yellow;
+}*/
